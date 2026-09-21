@@ -1,0 +1,62 @@
+{
+  "name": "magic-resume-clone",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "React SPA reproduction of JOYCEQL/magic-resume (Vite + React 18 + TS + React Router + Tailwind + Zustand + MSW)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "smoke": "esbuild scripts/smoke.ts --bundle --format=esm --platform=node --alias:@=./src --outfile=scripts/.smoke.mjs && node scripts/.smoke.mjs",
+    "mock:init": "msw init public/ --save=false"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.2",
+    "@radix-ui/react-dialog": "^1.1.2",
+    "@radix-ui/react-dropdown-menu": "^2.1.2",
+    "@radix-ui/react-select": "^2.1.2",
+    "@radix-ui/react-slider": "^1.2.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-switch": "^1.1.1",
+    "@radix-ui/react-tabs": "^1.1.1",
+    "@tiptap/extension-link": "^2.26.2",
+    "@tiptap/extension-placeholder": "^2.26.2",
+    "@tiptap/extension-text-align": "^2.26.2",
+    "@tiptap/extension-underline": "^2.26.2",
+    "@tiptap/pm": "^2.26.2",
+    "@tiptap/react": "^2.26.2",
+    "@tiptap/starter-kit": "^2.26.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "lucide-react": "^0.446.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "sonner": "^1.7.1",
+    "tailwind-merge": "^2.5.2",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.10",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "esbuild": "^0.24.0",
+    "msw": "^2.4.9",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "~5.5.4",
+    "vite": "^5.4.8"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}

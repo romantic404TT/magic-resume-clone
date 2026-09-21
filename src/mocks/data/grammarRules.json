@@ -1,0 +1,82 @@
+[
+  {
+    "id": "doubled-word",
+    "pattern": "\\b(\\w+)\\s+\\1\\b",
+    "flags": "gi",
+    "replacement": "$1",
+    "autoFix": true,
+    "severity": "error",
+    "messageZh": "重复单词",
+    "messageEn": "Duplicated word"
+  },
+  {
+    "id": "space-before-punctuation",
+    "pattern": "\\s+([,.;:!?])",
+    "flags": "g",
+    "replacement": "$1",
+    "autoFix": true,
+    "severity": "error",
+    "messageZh": "标点前多余空格",
+    "messageEn": "Space before punctuation"
+  },
+  {
+    "id": "missing-space-after-punctuation",
+    "pattern": "([,.;:!?])(?=[A-Za-z])",
+    "flags": "g",
+    "replacement": "$1 ",
+    "autoFix": true,
+    "severity": "error",
+    "messageZh": "标点后缺少空格",
+    "messageEn": "Missing space after punctuation"
+  },
+  {
+    "id": "lowercase-pronoun-i",
+    "pattern": "\\bi\\b",
+    "flags": "g",
+    "replacement": "I",
+    "autoFix": true,
+    "severity": "error",
+    "messageZh": "第一人称代词应大写",
+    "messageEn": "Pronoun \"I\" must be capitalized"
+  },
+  {
+    "id": "double-space",
+    "pattern": "[^\\S\\n]{2,}",
+    "flags": "g",
+    "replacement": " ",
+    "autoFix": true,
+    "severity": "warning",
+    "messageZh": "多余空格",
+    "messageEn": "Redundant spaces"
+  },
+  {
+    "id": "more-better",
+    "pattern": "\\bmore better\\b",
+    "flags": "gi",
+    "replacement": "better",
+    "autoFix": true,
+    "severity": "error",
+    "messageZh": "比较级重复",
+    "messageEn": "Double comparative"
+  },
+  {
+    "id": "can-be-able-to",
+    "pattern": "\\bcan be able to\\b",
+    "flags": "gi",
+    "replacement": "can",
+    "autoFix": true,
+    "severity": "error",
+    "messageZh": "冗余表达",
+    "messageEn": "Redundant modal phrase"
+  },
+  {
+    "id": "sentence-start-lowercase",
+    "pattern": "(?:^|[.!?]\\s+)([a-z])",
+    "flags": "g",
+    "replacement": "",
+    "autoFix": false,
+    "severity": "warning",
+    "messageZh": "句首字母应大写",
+    "messageEn": "Sentence should start with a capital letter"
+  }
+]

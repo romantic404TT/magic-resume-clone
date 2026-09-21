@@ -1,0 +1,18 @@
+{
+  "replacements": [
+    { "from": "utilized", "to": "used", "note": "用更常见的动词" },
+    { "from": "utilize", "to": "use", "note": "用更常见的动词" },
+    { "from": "a lot of", "to": "extensive", "note": "量化表述更专业" },
+    { "from": "lots of", "to": "many", "note": "书面语替换" },
+    { "from": "helped with", "to": "contributed to", "note": "突出个人贡献" },
+    { "from": "worked on", "to": "delivered", "note": "结果导向" },
+    { "from": "was responsible for", "to": "owned", "note": "更简洁的所有权表述" },
+    { "from": "in charge of", "to": "led", "note": "强调领导力" },
+    { "from": "made", "to": "built", "note": "工程语境更贴切" },
+    { "from": "did", "to": "executed", "note": "动作更具体" },
+    { "from": "job duties", "to": "responsibilities", "note": "术语统一" },
+    { "from": "team player", "to": "cross-functional collaborator", "note": "避免陈词滥调" }
+  ],
+  "weakOpeners": ["I think", "I believe", "really", "very", "just", "actually"],
+  "bulletPrefix": "• "
+}

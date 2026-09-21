@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+scripts/.smoke.mjs
+.dev.log
+*.local
+.DS_Store
+.vite
